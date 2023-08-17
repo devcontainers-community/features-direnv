@@ -6,8 +6,6 @@
   <img width=400 src=https://i.imgur.com/7On7iXn.png>
 </p>-->
 
-Uses the `postAttachCommand` to tell you that **you are awesome** whenever you start the Dev Container. ❤️
-
 ## Usage
 
 ```jsonc
