@@ -1,7 +1,15 @@
 {
-  "id": "i-am-awesome",
-  "version": "0.1.0",
-  "name": "I am awesome",
-  "documentationURL": "https://github.com/octocat/i-am-awesome#readme",
-  "options": {}
+  "id": "direnv",
+  "version": "1.0.6",
+  "name": "direnv",
+  "documentationURL": "http://github.com/devcontainers-community/features-direnv",
+  "description": "direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  }
 }
