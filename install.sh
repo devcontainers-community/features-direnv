@@ -6,8 +6,6 @@ if [[ $VERSION == system ]]; then
   check_packages direnv
 else
   check_packages curl ca-certificates sudo
-
-  export bin_path=/usr/local
   curl -sfL https://direnv.net/install.sh | bash
 fi
 
