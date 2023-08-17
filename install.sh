@@ -12,9 +12,9 @@ else
 fi
 
 echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
-if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
+if [[ -f cat /etc/bash.bashrc ]]; then
     echo -e 'eval "$(direnv hook bash)"' >> /etc/bash.bashrc
 fi
-if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
+if [ -f "/etc/zsh/zshrc" ]; then
     echo -e 'eval "$(direnv hook zsh)"' >> /etc/zsh/zshrc
 fi
