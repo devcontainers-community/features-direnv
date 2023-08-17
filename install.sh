@@ -24,6 +24,14 @@ else
   
   curl -fsSLo direnv "https://github.com/direnv/direnv/releases/download/v$VERSION/direnv.freebsd-$architecture"
 
-  chmod +x direnv
+  chmod 777 direnv
   mv direnv /usr/local/bin/direnv
+fi
+
+echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
+if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
+    echo -e 'eval "$(direnv hook bash)"' >> /etc/bash.bashrc
+fi
+if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
+    echo -e 'eval "$(direnv hook zsh)"' >> /etc/zsh/zshrc
 fi
