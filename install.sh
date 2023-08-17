@@ -9,6 +9,8 @@ if [[ $VERSION == system ]]; then
   sudo apt-get install -y direnv
 else
   curl -sS https://webi.sh/gh | sh
+  # From installer output
+  source ~/.config/envman/PATH.env
 
   # https://stackoverflow.com/a/48679640/19522682
   architecture=""
