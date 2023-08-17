@@ -3,9 +3,10 @@ set -ex
 source lib.sh
 
 if [[ $VERSION == system ]]; then
-  sudo apt-get update
-  sudo apt-get install -y direnv
+  check_packages direnv
 else
+  check_packages curl ca-certificates sudo
+
   export bin_path=/usr/local
   curl -sfL https://direnv.net/install.sh | bash
 fi
