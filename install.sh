@@ -10,7 +10,7 @@ else
 fi
 
 echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
-if [[ -f cat /etc/bash.bashrc ]]; then
+if [[ -f /etc/bash.bashrc ]]; then
     echo -e 'eval "$(direnv hook bash)"' >> /etc/bash.bashrc
 fi
 if [ -f "/etc/zsh/zshrc" ]; then
