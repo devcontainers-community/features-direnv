@@ -1,5 +1,8 @@
 #!/bin/bash
 set -ex
+source lib.sh
+
+check_packages curl ca-certificates
 
 if [[ $VERSION == system ]]; then
   sudo apt-get update
