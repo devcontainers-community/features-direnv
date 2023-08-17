@@ -27,6 +27,7 @@ jobs:
           - image: mcr.microsoft.com/devcontainers/base:ubuntu
             options: '{ "version": "2.32.3" }'
           - image: debian:bookworm-slim
+            options: '{ "version": "system" }'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
