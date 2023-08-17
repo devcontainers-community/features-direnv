@@ -1,6 +1,6 @@
 {
   "id": "direnv",
-  "version": "1.0.6",
+  "version": "1.0.0",
   "name": "direnv",
   "documentationURL": "http://github.com/devcontainers-community/features-direnv",
   "description": "direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.",
